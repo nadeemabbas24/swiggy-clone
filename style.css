@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     /* border:1px solid red; */
     
 }
@@ -95,6 +95,13 @@ body{
     .right{        
         display: none;
     }
+    .right2{
+        display: none;
+    }
+   .logo{
+       
+        width: 30px;
+    }
     #breadcrumb{        
         visibility: visible;
         position: absolute;
@@ -102,20 +109,18 @@ body{
         cursor: pointer;
     }
 
+
     #breadcrumb:hover +.right, .right:hover{
         position: absolute;
         display: flex;
         background-color: #ffffff;
         flex-direction: column;  
         justify-content: space-around;
-        align-items: center;
-        
+        align-items: center;        
         top:44px;
         right: 0;
-        height: 95vh;
-    
-        /* border:1px solid red; */
-        
+        height: 95vh;    
+        /* border:1px solid red; */        
     }
   
 }
