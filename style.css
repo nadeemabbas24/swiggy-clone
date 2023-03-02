@@ -111,6 +111,7 @@ body{
     }
     .right2{
         visibility: hidden;
+        display: none;
     }
 }
 
