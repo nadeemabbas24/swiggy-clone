@@ -90,30 +90,36 @@ body{
     visibility: hidden;
 
 }
-#breadcrumb:hover {
-    cursor: pointer;
-    visibility: visible;
-    flex-flow: column nowrap;
 
-
-}
 @media screen and (max-width:480px) {
-    .right{
-        
-        visibility: collapse;
-
+    .right{        
+        display: none;
     }
-    #breadcrumb{
-        
+    #breadcrumb{        
         visibility: visible;
         position: absolute;
         right:50px;
+        cursor: pointer;
     }
-    .right2{
-        visibility: hidden;
-        display: none;
+
+    #breadcrumb:hover +.right, .right:hover{
+        position: absolute;
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: column;  
+        justify-content: space-around;
+        align-items: center;
+        
+        top:44px;
+        right: 0;
+        height: 95vh;
+    
+        /* border:1px solid red; */
+        
     }
+  
 }
+
 
 /*---card story---*/
 .contents{
